@@ -3,7 +3,6 @@ package territoris;
 
 import java.util.Scanner;
 
-
 public class Comarca {
 
     private final static Scanner DADES = new Scanner(System.in);

@@ -3,9 +3,8 @@ package territoris;
 
 import java.util.Scanner;
 
+public class Ciutat {
 
-public class Ciutat { 
-    
     private final static Scanner DADES = new Scanner(System.in);
 
     private String codi;
@@ -20,9 +19,7 @@ public class Ciutat {
         this.densitat = densitat;
     }
 
-    /*
-     TODO Heu d'implementar tots els mètodes accessors possibles.  
-     */
+
     public String getCodi() {
         return codi;
     }
