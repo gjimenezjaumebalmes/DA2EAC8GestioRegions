@@ -5,12 +5,11 @@ import java.util.Scanner;
 public class Poblacio {
 
     // Atributs
-
+    public final static Scanner DADES = new Scanner(System.in);
     public String codi;
     public String nom;
     public int habitants;
     public double densitat;
-
     // Constructor
 
     public Poblacio(String codi, String nom, int habitants, double densitat) {

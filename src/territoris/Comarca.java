@@ -3,10 +3,9 @@ package territoris;
 
 import java.util.Scanner;
 
-public class Comarca {
+public class Comarca{
 
     private final static Scanner DADES = new Scanner(System.in);
-
     private String codi;
     private String nom;
     private String capital;
@@ -17,15 +16,13 @@ public class Comarca {
     private ZonaRural[] zonesRurals = new ZonaRural[100];
     private int pZonesRurals = 0; //Priemra posició buida de l'array de zones rurals
 
+        public Comarca(String codi, String nom, String capital) {
+            this.codi = codi;
+            this.nom = nom;
+            this.capital = capital;
+        }
 
-    public Comarca(String codi, String nom, String capital) {
-        this.codi = codi;
-        this.nom = nom;
-        this.capital = capital;
-    }
-
-
-    public String getCodi() {
+        public String getCodi() {
         return codi;
     }
 

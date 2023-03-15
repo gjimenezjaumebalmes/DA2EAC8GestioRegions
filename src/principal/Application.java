@@ -74,11 +74,11 @@ public class Application {
 
         do {
             int indexSel;
-            System.out.println("\nSelecciona una opcio");
+            System.out.println("\nSelecciona una opcio de Regions");
             System.out.println("\n0. Sortir");
-            System.out.println("\n1. Alta");
-            System.out.println("\n2. Seleccionar");
-            System.out.println("\n3. Modificar");
+            System.out.println("\n1. Alta Regio");
+            System.out.println("\n2. Seleccionar Regio");
+            System.out.println("\n3. Modificar Regio");
             System.out.println("\n4. Llista de regions");
             opcio = DADES.nextInt();
             switch (opcio) {
@@ -130,10 +130,10 @@ public class Application {
         int opcio;
 
         do {
-            System.out.println("\nSelecciona una opcio");
+            System.out.println("\nSelecciona una opcio de Comarques");
             System.out.println("\n0. Sortir");
-            System.out.println("\n1. Alta");
-            System.out.println("\n2. Modificar");
+            System.out.println("\n1. Alta Comarca");
+            System.out.println("\n2. Modificar Comarca");
             System.out.println("\n3. Llista de comarques");
             opcio = DADES.nextInt();
             switch (opcio) {
@@ -167,10 +167,10 @@ public class Application {
         int opcio;
 
         do {
-            System.out.println("\nSelecciona una opcio");
+            System.out.println("\nSelecciona una opcio de Ciutats");
             System.out.println("\n0. Sortir");
-            System.out.println("\n1. Alta");
-            System.out.println("\n2. Modificar");
+            System.out.println("\n1. Alta Ciutat");
+            System.out.println("\n2. Modificar Ciutat");
             System.out.println("\n3. Llista de ciutats");
             opcio = DADES.nextInt();
             switch (opcio) {
@@ -205,10 +205,10 @@ public class Application {
         int opcio;
 
         do {
-            System.out.println("\nSelecciona una opcio");
+            System.out.println("\nSelecciona una opcio de Pobles");
             System.out.println("\n0. Sortir");
-            System.out.println("\n1. Alta");
-            System.out.println("\n2. Modificar");
+            System.out.println("\n1. Alta Poble");
+            System.out.println("\n2. Modificar Poble");
             System.out.println("\n3. Llista de pobles");
             opcio = DADES.nextInt();
             switch (opcio) {
@@ -241,10 +241,10 @@ public class Application {
         int opcio;
 
         do {
-            System.out.println("\nSelecciona una opcio");
+            System.out.println("\nSelecciona una opcio de Zona Rural");
             System.out.println("\n0. Sortir");
-            System.out.println("\n1. Alta");
-            System.out.println("\n2. Modificar");
+            System.out.println("\n1. Alta Zona Rural");
+            System.out.println("\n2. Modificar Zona Rural");
             System.out.println("\n3. Llista de zones rurals");
             opcio = DADES.nextInt();
             switch (opcio) {
