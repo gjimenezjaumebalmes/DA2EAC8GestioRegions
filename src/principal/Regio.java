@@ -1,16 +1,9 @@
-/*
- * Classe que defineix una regió. Una regió es defineix pel seu nom, el nom de 
- * la seva capital i un array de comarques.
- */
+
 package principal;
 
 import java.util.Scanner;
 import territoris.Comarca;
 
-/**
- *
- * @author fta
- */
 public class Regio {
 
     private final static Scanner DADES = new Scanner(System.in);
@@ -18,25 +11,15 @@ public class Regio {
     private String nom;
     private String capital;
     private Comarca[] comarques = new Comarca[5];
-    private int pComarques = 0; //Priemra posició buida de l'array de comarques
+    private int pComarques = 0; //Primera posició buida de l'array de comarques
 
-    /*
-     TODO CONSTRUCTOR
-    
-     Paràmetres: valors per tots els atributs de la classe menys els arrays.
-    
-     Accions:
-     - Assignar als atributs corresponents els valors passats com a paràmetres..
-     */
+
     public Regio(String nom, String capital) {
         this.nom = nom;
         this.capital = capital;
     }
 
 
-    /*
-     TODO Heu d'implementar tots els mètodes accessors possibles.
-     */
     public String getNom() {
         return nom;
     }
@@ -69,19 +52,7 @@ public class Regio {
         this.pComarques = pComarques;
     }
 
-    /*
-    TODO
-    
-     Paràmetres: cap
-    
-     Accions:
-     - Demanar a l'usuari les dades per consola per crear una nova regió. Les dades a demanar 
-       són les que necessita el constructor.
-     - També heu de tenir en compte que el nom de la regió o la seva capital poden ser frase, per exemple, 
-       "Regió IV".
-     
-     Retorn: La nova regió creada.
-     */
+
     public static Regio addRegio() {
         String nom, capital;
 
@@ -93,21 +64,7 @@ public class Regio {
         return new Regio(nom, capital);
     }
 
-    /*
-     TODO
-    
-     Paràmetres: cap
-    
-     Accions:
-     - Demanar a l'usuari que introdueixi les noves dades de la regió i
-       modificar els atributs corresponents d'aquesta regió. Els únics atributs que modificarem
-       són els que hem inicialitzat en el constructor amb els paràmetres passats.
-     - També heu de tenir en compte que el nom de la regió o la seva capital poden ser frase, per exemple, 
-       "Regió IV".
-     - Li heu de mostrar a l'usuari els valors dels atributs abans de modificar-los.
-     
-    Retorn: cap
-     */
+
     public void updateRegio() {
         System.out.println("\nNom de la regio: " + nom);
         System.out.println("\nEntra el nou nom:");
@@ -117,16 +74,7 @@ public class Regio {
         capital = DADES.nextLine();
     }
 
-    /*
-     TODO
-    
-     Paràmetres: cap
-    
-     Accions:
-     - Calcular el total d'habitants de la regió a partir dels habitants de les comarques.
-     
-     Retorn: nombre total d'habitants
-     */
+
     public int calcularTotalHabitants() {
 
         int totalHabitants = 0;
@@ -144,23 +92,7 @@ public class Regio {
         System.out.println("\nTotal habitants: " + calcularTotalHabitants());
     }
 
-    /*
-     COMARCA
-     */
- /*
-     TODO
-    
-     Paràmetres: cap
-    
-     Accions:
-     - Afegeix una nova comarca a l'array de comarques de la regió actual si aquesta no existeix. 
-       Per afegir-la heu de fer servir el mètode de la classe Comarca escaient i per comprovar la seva 
-       existència el mètode d'aquesta classe que ens ajuda en aquesta tasca.
-     - Actualitza la posició de l'array de comarques si s'afegeix la comarca.
-     - Mostra el missatge "La comarca ja existeix" si no s'ha afegit la comarca.
-    
-     Retorn: cap
-     */
+
     public void addComarca() {
 
         Comarca novaComarca = Comarca.addComarca();
