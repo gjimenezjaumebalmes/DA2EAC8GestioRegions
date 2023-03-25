@@ -1,7 +1,7 @@
 package territoris;
 
 import java.util.Scanner;
-
+// class poblacio
 public class Poblacio {
 
     // Atributs
